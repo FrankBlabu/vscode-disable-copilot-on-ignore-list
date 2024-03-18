@@ -1,0 +1,62 @@
+{
+  "name": "vscode-disable-copilot-on-file-ignore-list",
+  "displayName": "Disable Copilot On File Ignore List",
+  "version": "1.0.0",
+  "description": "VS Code extension disabling GitHub Copilot on based on a file ignore list",
+  "author": "FrankBlabu",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "disable-copilot-on-tag.enable",
+        "title": "Enable GitHub Copilot"
+      },
+      {
+        "command": "disable-copilot-on-tag.disable",
+        "title": "Disable GitHub Copilot"
+      },
+      {
+        "command": "disable-copilot-on-tag.about",
+        "title": "About GitHub Copilot Disabler"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -p .",
+    "package": "vsce package --out ./package/$npm_package_name-$npm_package_version.vsix"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.87.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FrankBlabu/vscode-extension-disable-copilot.git"
+  },
+  "keywords": [
+    "vscode",
+    "extension",
+    "disable",
+    "GitHub Copilot"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ignore": "^5.3.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2"
+  }
+}

@@ -1,0 +1,11 @@
+# Explicitly include only what we need
+!.vscodeignore
+!CHANGELOG.md
+!LICENSE
+!out/*.js
+!package-lock.json
+!package.json
+!README.md
+
+# Exclude everything else
+**/*

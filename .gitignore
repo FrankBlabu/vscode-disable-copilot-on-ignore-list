@@ -1,0 +1,5 @@
+# Exclude unnecessary / build folders
+.vscode
+node_modules
+out
+package
